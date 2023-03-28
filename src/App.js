@@ -9,6 +9,7 @@ function App() {
       <motion.div className='box1'
       drag
       dragConstraints={parentRef}
+      dragElastic={0}
       >
 
       </motion.div>
