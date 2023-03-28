@@ -1,12 +1,14 @@
-
+import React, {useRef} from 'react';
 import './App.css';
-import {motion, MotionConfig} from "framer-motion"
+import {motion} from "framer-motion"
 
 function App() {
+  const parentRef = useRef()
   return (
-    <div className="App">
+    <div className="App" ref={parentRef}>
       <motion.div className='box1'
       drag
+      dragConstraints={parentRef}
       >
 
       </motion.div>
